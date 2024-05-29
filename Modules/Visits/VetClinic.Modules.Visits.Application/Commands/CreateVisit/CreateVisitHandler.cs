@@ -15,6 +15,15 @@ public class CreateVisitHandler : IRequestHandler<CreateVisitCommand>
 
     public async Task Handle(CreateVisitCommand request, CancellationToken cancellationToken)
     {
+        var allVisits = await _visitRepository.GetAllVisits(cancellationToken);
+        
+        // var canCreateVisit = allVisits
+        //     .Any(x => x.Date >= request.Date && x.Date <= request.Date);
+        //
+        // if (!canCreateVisit)
+        //     throw new Exception("Cant book visit cause there is already booked one");
+            
+            
         var newVisit = Visit.Create(request.Date, request.Owner, request.PetName, request.PetAge, request.PetColor);
         await _visitRepository.AddAsync(newVisit, cancellationToken);
     }
