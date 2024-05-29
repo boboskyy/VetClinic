@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="DAL\Initializers\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Shared\VetClinic.Shared\VetClinic.Shared.csproj" />
+      <ProjectReference Include="..\VetClinic.Modules.Visits.Application\VetClinic.Modules.Visits.Application.csproj" />
+    </ItemGroup>
+
+</Project>
