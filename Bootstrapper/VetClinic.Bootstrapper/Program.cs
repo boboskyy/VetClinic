@@ -1,6 +1,4 @@
-using VetClinic.Modules.Organizations.Api;
 using VetClinic.Shared;
-using VetClinic.Modules.Users.Api;
 using VetClinic.Modules.Visits.Api;
 
 var builder = WebApplication.CreateBuilder(args);

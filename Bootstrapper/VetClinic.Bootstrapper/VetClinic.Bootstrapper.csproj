@@ -15,8 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Modules\Organizations\VetClinic.Modules.Organizations.Api\VetClinic.Modules.Organizations.Api.csproj" />
-    <ProjectReference Include="..\..\Modules\Users\VetClinic.Modules.Users.Api\VetClinic.Modules.Users.Api.csproj" />
     <ProjectReference Include="..\..\Modules\Visits\VetClinic.Modules.Visits.Api\VetClinic.Modules.Visits.Api.csproj" />
     <ProjectReference Include="..\..\Shared\VetClinic.Shared\VetClinic.Shared.csproj" />
   </ItemGroup>
